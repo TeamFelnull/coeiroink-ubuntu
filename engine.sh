@@ -6,11 +6,12 @@ cd voicevox_engine
 git switch c-1.6.0+v-0.12.3+gpu
 
 # language setting
+asdf plugin-add python
 asdf install python 3.8.10
 asdf local python 3.8.10
 
 # パッケージインストール
-python -m venv venv
+python3 -m venv venv
 source ./venv/bin/activate
 pip install typing-extensions==4.5.0
 pip install -r requirements.txt
